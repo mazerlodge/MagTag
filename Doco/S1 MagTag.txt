@@ -32,3 +32,7 @@ Steps:
 	esptool.py --port COM88 --after=no_reset write_flash 0x0 firmware.bin
 	Don't forget to change the --port name to match, and the file name from firmware.bin to whatever the firmware file name is.
 
+NEXT: 
+	- Do https://learn.adafruit.com/spacex-next-launch-display-with-adafruit-magtag
+
+	
