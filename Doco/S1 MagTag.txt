@@ -12,6 +12,23 @@ Steps:
 - Enter bootloader mode. 
 	https://learn.adafruit.com/adafruit-magtag/rom-bootloader
 	
-	(8/28) - Doesn't work on mac, not found at /dev/cu.usbmodem*
+	(8/28) 
+		- Doesn't work on mac, not found at /dev/cu.usbmodem*
+		- On linux On Linux, try ls /dev/ttyS* on some it shows as ttyACM0
+			Shows up as:
+			ls -l /dev/ttyA*
+			crw-rw---- 1 mazerlodge dialout 166, 0 Aug 28 13:04 /dev/ttyACM0
 
+- Install esptool 
+	$ pip3 install --update esptool 
+		N-- Messages saved to [ESPTool install messages.txt]
+
+- Run ESPTool to check chip ID, verify visible (reference port found above) 
+	$ esptool.py --port /dev/ttyACM0 chip_id
+		N-- Messages saved to [ESPTool chip_id output.txt]
+
+- You can now upload a binary file with the following command
+
+	esptool.py --port COM88 --after=no_reset write_flash 0x0 firmware.bin
+	Don't forget to change the --port name to match, and the file name from firmware.bin to whatever the firmware file name is.
 
