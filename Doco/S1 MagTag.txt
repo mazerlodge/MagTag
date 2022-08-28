@@ -1,0 +1,17 @@
+S1 MagTag Project 
+
+Goal - Initial implementation of Adafruit MagTag 2.9" Grayscale 
+
+Reference:
+https://www.adafruit.com/product/4800
+http://adafru.it/4800 (redirects to the above)
+
+https://learn.adafruit.com/adafruit-magtag  (Primary Guide)
+
+Steps:
+- Enter bootloader mode. 
+	https://learn.adafruit.com/adafruit-magtag/rom-bootloader
+	
+	(8/28) - Doesn't work on mac, not found at /dev/cu.usbmodem*
+
+
