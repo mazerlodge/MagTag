@@ -32,7 +32,46 @@ Steps:
 	esptool.py --port COM88 --after=no_reset write_flash 0x0 firmware.bin
 	Don't forget to change the --port name to match, and the file name from firmware.bin to whatever the firmware file name is.
 
-NEXT: 
-	- Do https://learn.adafruit.com/spacex-next-launch-display-with-adafruit-magtag
+Setup for SpaceX 
+	Reference:  https://learn.adafruit.com/spacex-next-launch-display-with-adafruit-magtag
+
+	- Downloaded latest Circuit Python 
+		Saved as ~/downloads 
+			adafruit-circuitpython-adafruit_magtag_2.9_grayscale-en_US-7.3.2.bin
+			adafruit-circuitpython-adafruit_magtag_2.9_grayscale-en_US-7.3.2.uf2
+
+	- Double click reset (medium click pace) to get magtag to show as a drive 
+
+	- Copied uf2 file to MagTag drive
+
+	- Board lights flashed yellow for several seconds then circuitpython drive appeared 
+
+	- Downloaded WiFi test code bundle from:
+		https://learn.adafruit.com/spacex-next-launch-display-with-adafruit-magtag/circuitpython-internet-test
+
+		- Extracted to Code/CPy_Native_WiFi_Test 
+		- Bup code and lib from MagTag Circuit Py folder to Code/CircuitPyBup 
+		- Added secrets.py to .gitignore
+		- Updated secrets.py w/ wifi network info and timezone 
+		- Copied files to MagTag 
+		- Installed screen
+			$ sudo apt install screen 
+		- Connect serial port via 
+			$ screen /dev/ttyACM0 115200
+			- Output worked, saved to [Output from WiFi Test on MagTag.txt]
+			- Note: ctrl-a, k to kill screen (found on internet) 
+
+	- Downloaded SpaceX bundle from: 
+		https://learn.adafruit.com/spacex-next-launch-display-with-adafruit-magtag/code
+
+		Extracted Zip to code folder MagTag_SpaceX
+		Copied Code, Lib and Font to MagTag
+		Restarted via screen session (still open from above) 
+			Note: ctrl-a, k to kill screen (found on internet) 
+
+Next: 
+	Charging battery for MagTag.
+
+
 
 	

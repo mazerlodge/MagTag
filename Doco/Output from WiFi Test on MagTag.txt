@@ -1,0 +1,39 @@
+Output from WiFi Test on MagTag.txt
+
+Results from: 
+screen /dev/ttyACM0 115200
+
+Press any key to enter the REPL. Use CTRL-D to reload.
+soft reboot
+
+Auto-reload is on. Simply save files over USB to run them or enter REPL to disable.
+code.py output:
+ESP32-S2 WebClient Test
+My MAC addr: ['0x7c', '0xdf', '0xa1', '0x1a', '0xdd', '0x2']
+Available WiFi networks:
+        qednet          RSSI: -34       Channel: 3
+Connecting to qednet
+Connected to qednet!
+My IP address is 192.168.1.34
+Ping google.com: 26.999993 ms
+Fetching text from http://wifitest.adafruit.com/testwifi/index.html
+----------------------------------------
+This is a test of Adafruit WiFi!
+If you can read this, its working :)
+----------------------------------------
+Fetching json from https://www.adafruit.com/api/quotes.php
+----------------------------------------
+[{'text': 'There’s nothing like watching the sunrise to the beats of the Robot Heart', 'author': 'Andrew "bunnie" Huang'}]
+----------------------------------------
+
+Fetching and parsing json from https://api.github.com/repos/adafruit/circuitpython
+----------------------------------------
+CircuitPython GitHub Stars 3146
+----------------------------------------
+done
+
+Code done running.
+
+Press any key to enter the REPL. Use CTRL-D to reload.
+
+Adafruit CircuitPython 7.3.2 on 2022-07-20; Adafruit MagTag with ESP32S2
