@@ -1,0 +1,31 @@
+ESPTool install messages.txt
+
+pip3 install --upgrade esptool
+Defaulting to user installation because normal site-packages is not writeable
+Collecting esptool
+  Downloading esptool-3.3.1.tar.gz (213 kB)
+     |████████████████████████████████| 213 kB 2.2 MB/s 
+Collecting bitstring>=3.1.6
+  Downloading bitstring-3.1.9-py3-none-any.whl (38 kB)
+Requirement already satisfied: cryptography>=2.1.4 in /usr/lib/python3/dist-packages (from esptool) (2.1.4)
+Collecting ecdsa>=0.16.0
+  Downloading ecdsa-0.18.0-py2.py3-none-any.whl (142 kB)
+     |████████████████████████████████| 142 kB 12.5 MB/s 
+Requirement already satisfied: pyserial>=3.0 in /home/mazerlodge/.local/lib/python3.6/site-packages (from esptool) (3.4)
+Collecting reedsolo<=1.5.4,>=1.5.3
+  Downloading reedsolo-1.5.4.tar.gz (271 kB)
+     |████████████████████████████████| 271 kB 12.6 MB/s 
+Requirement already satisfied: six>=1.9.0 in /usr/lib/python3/dist-packages (from ecdsa>=0.16.0->esptool) (1.11.0)
+Building wheels for collected packages: esptool, reedsolo
+  Building wheel for esptool (setup.py) ... done
+  Created wheel for esptool: filename=esptool-3.3.1-py3-none-any.whl size=345348 sha256=bc3e393079859baf2706a83b9ec7d61be44dfb4b4ab5033a37abd203f8021aa1
+  Stored in directory: /home/mazerlodge/.cache/pip/wheels/63/83/8b/5044871e298698bc00559ef77eeb1290f26e5faf757c819f20
+  Building wheel for reedsolo (setup.py) ... done
+  Created wheel for reedsolo: filename=reedsolo-1.5.4-py3-none-any.whl size=35126 sha256=8fc1294de99802887b672ba5b6694750bf681ae4187c1cba2ed5b64f34eaa620
+  Stored in directory: /home/mazerlodge/.cache/pip/wheels/5e/37/fe/0df098b3c33c536490e97d750654ac610957980c120cf32f7c
+Successfully built esptool reedsolo
+Installing collected packages: reedsolo, ecdsa, bitstring, esptool
+Successfully installed bitstring-3.1.9 ecdsa-0.18.0 esptool-3.3.1 reedsolo-1.5.4
+WARNING: You are using pip version 21.0.1; however, version 21.3.1 is available.
+You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade pip' command.
+
